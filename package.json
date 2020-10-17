@@ -1,0 +1,19 @@
+{
+  "name": "localeo-api",
+  "version": "1.0.0",
+  "description": "Module of asynchronous function to interract with https://localeo.herokuapp.com API",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TuncayBasak25/localeo-API.git"
+  },
+  "author": "Tuncay Basak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TuncayBasak25/localeo-API/issues"
+  },
+  "homepage": "https://github.com/TuncayBasak25/localeo-API#readme"
+}
