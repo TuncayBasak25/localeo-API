@@ -10,7 +10,7 @@ import updateAvis from './avis/updateAvis';
 
 import createMessage from './message/createMessage';
 import deleteMessage from './message/deleteMessage';
-import readMessage, { getMessage, getChatRoom, getRoomMessages } from './message/readMessage';
+import readMessage, { getMessage, getNewMessages, getChatRoom, getRoomMessages } from './message/readMessage';
 import updateMessage from './message/updateMessage';
 
 import createArticle from './article/createArticle';
@@ -41,6 +41,7 @@ const Api = {
   readMessage: readMessage,
   updateMessage: updateMessage,
   getMessage: getMessage,
+  getNewMessages: getNewMessages,
   getChatRoom: getChatRoom,
   getRoomMessages: getRoomMessages,
 
