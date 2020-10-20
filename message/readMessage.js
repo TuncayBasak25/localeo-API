@@ -7,7 +7,7 @@ export function getMessage(messageId)
 
 export function getNewMessages(lastMessageId)
 {
-  return fetchApi(`message/read?lastMessageId=${lastMessageId}`);
+  return fetchApi(`message/read/getNewMessages?lastMessageId=${lastMessageId}`);
 }
 
 export function getChatRoom(corresponderId, page = 1, max = 20)
