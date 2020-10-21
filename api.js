@@ -28,7 +28,7 @@ const Api = {
   login: login,
   register: register,
   logout: logout,
-  updateUser: updateUser,,
+  updateUser: updateUser,
   getUser: getUser,
 
   createAvis: createAvis,
