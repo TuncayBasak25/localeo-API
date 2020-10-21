@@ -2,6 +2,7 @@ import login from './user/login';
 import register from './user/register';
 import logout from './user/logout';
 import updateUser from './user/updateUser';
+import getUser from './user/read';
 
 import createAvis from './avis/createAvis';
 import deleteAvis from './avis/deleteAvis';
@@ -27,7 +28,8 @@ const Api = {
   login: login,
   register: register,
   logout: logout,
-  updateUser: updateUser,
+  updateUser: updateUser,,
+  getUser: getUser,
 
   createAvis: createAvis,
   deleteAvis: deleteAvis,
