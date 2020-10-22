@@ -1,6 +1,6 @@
 {
   "name": "localeo-api",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Module of asynchronous function to interract with https://localeo.herokuapp.com API",
   "main": "api.js",
   "scripts": {
