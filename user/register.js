@@ -1,4 +1,4 @@
-import fetchApi from '../fetchApi';
+import { fetchApi } from '../api';
 
 export default function register(username, email, password, passwordConfirm, avatar)
 {

@@ -64,4 +64,33 @@ const Api = {
   getBase64: getBase64
 }
 
+export async function fetchApi(url, options)
+{
+  try {
+    if (Api.sessionToken)
+    {
+      if (options)
+      {
+        let cache = JSON.parse(options.body);
+        cache.sessionToken = Api.sessionToken;
+        options.body = JSON.stringify(cache);
+      }
+      else if (url.indexOf('?') > 0) url += `&sessionToken=${Api.sessionToken}`;
+      else url += `?sessionToken=${Api.sessionToken}`;
+    }
+
+    let res = await fetch('http://localeo.herokuapp.com/API/' + url, options);
+
+    let json = await res.text();
+    if (json.charAt(0) !== '<') json = JSON.parse(json);
+    else
+    {
+      return { error: json };
+    }
+    return json;
+  } catch (e) {
+    console.log(e);
+  }
+}
+
 export default Api;

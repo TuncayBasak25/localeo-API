@@ -1,4 +1,4 @@
-import fetchApi from '../fetchApi';
+import { fetchApi } from '../api';
 
 export default function login(username, password)
 {
