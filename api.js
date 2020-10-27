@@ -79,7 +79,7 @@ export async function fetchApi(url, options)
       else url += `?sessionToken=${Api.sessionToken}`;
     }
 
-    let res = await fetch('http://localeo.herokuapp.com/API/' + url, options);
+    let res = await fetch('https://localeo.herokuapp.com/API/' + url, options);
 
     let json = await res.text();
     if (json.charAt(0) !== '<') json = JSON.parse(json);
